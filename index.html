@@ -50,7 +50,7 @@ main{max-width:1050px;margin:auto;padding:14px;display:grid;gap:12px}.stats{disp
 <aside class="side"><section class="panel"><h3>📜 ساحة القيادة</h3><p id="status" class="turn">دورك: اختر إحدى وحداتك الزرقاء.</p><p id="details">اختر وحدة ثم اختر خانة مجاورة للتحرك أو مهاجمة عدو.</p><div class="actions"><button class="primary" id="infantry">⚔ مشاة · 40</button><button id="archer">🏹 رماة · 55</button><button id="cavalry">🐎 فرسان · 75</button><button id="end">إنهاء الدور ↶</button></div><p class="help">التجنيد يتم في القلعة الزرقاء أو أي قلعة تسيطر عليها. المشاة والفرسان يهاجمون من خانة مجاورة، والرماة من مسافة خانتين.</p></section>
 <section class="panel"><h3>📖 سجل المعركة</h3><div class="log" id="log">بدأت الحملة. احمِ قلعتك وتوسّع قبل أن تفعل إمبراطورية الحديد.</div></section></aside></div>
 <section class="panel"><h3>🎯 هدف الحملة</h3><p>سيطر على ثلاث قلاع للفوز. إذا خسرت جميع وحداتك وقلاعك، تنتهي الحملة. كل قلعة تمنحك ذهباً وطعاماً مع بداية دورك.</p></section>
-</main>
+</main></div>
 <script>
 const W=12,H=8,board=document.getElementById('board');let gold=120,food=100,round=1,selected=null,ended=false;
 const units={infantry:{name:'مشاة',icon:'⚔',cost:40,food:20,hp:10,range:1,power:4},archer:{name:'رامٍ',icon:'🏹',cost:55,food:25,hp:7,range:2,power:3},cavalry:{name:'فارس',icon:'🐎',cost:75,food:35,hp:13,range:1,power:6}};
