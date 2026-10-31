@@ -1,0 +1,30 @@
+/* Realms of Ash campaign expansion */
+#grand-campaign{max-width:1180px;margin:18px auto;padding:14px;color:#f4efdf}
+.campaign-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.campaign-head h2{margin:0;color:#e8bd66;font-size:clamp(20px,4vw,30px)}
+.campaign-sub{color:#aeb5c4;font-size:12px;margin-top:5px}
+.campaign-grid{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:12px}
+.world-frame,.campaign-panel{background:#202431;border:1px solid #ffffff20;border-radius:14px;padding:12px}
+.world-map{display:block;width:100%;height:auto;min-height:330px;background:#172b32;border-radius:10px;touch-action:manipulation}
+.world-map .region{stroke:#111722;stroke-width:2;stroke-linejoin:round;cursor:pointer;transition:filter .15s}
+.world-map .region:hover{filter:brightness(1.25)}
+.world-map .region.selected{stroke:#f4d17b;stroke-width:5}
+.world-map .terrain{pointer-events:none;font-size:17px;opacity:.65}
+.world-map .city{cursor:pointer;stroke:#f6e4bb;stroke-width:1.4}
+.world-map .city-label{font-size:12px;fill:#fff4d7;paint-order:stroke;stroke:#18202a;stroke-width:3px;stroke-linejoin:round;pointer-events:none}
+.campaign-side{display:grid;gap:10px;align-content:start}
+.campaign-panel h3{margin:0 0 9px;color:#e8bd66;font-size:16px}
+.faction-list{display:grid;gap:6px}
+.faction-item{display:flex;align-items:center;gap:8px;background:#151a25;border-radius:8px;padding:7px;font-size:12px}
+.faction-swatch{width:12px;height:12px;border-radius:3px;flex:none}
+.campaign-resources{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:12px}
+.campaign-resource{background:#202431;border:1px solid #ffffff18;border-radius:9px;text-align:center;padding:9px 3px;font-size:11px;color:#bfc5d1}
+.campaign-resource b{display:block;color:#e8bd66;font-size:17px;margin-top:4px}
+.campaign-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.campaign-actions button,.campaign-panel button{border:1px solid #ffffff25;background:#343b4d;color:#fff;padding:10px 8px;border-radius:8px;font-size:12px;font-weight:bold}
+.campaign-actions button.primary,.campaign-panel button.primary{background:#8c6830}
+.campaign-panel button:disabled{opacity:.35}
+.campaign-log{font-size:12px;line-height:1.8;color:#c8ced9;max-height:160px;overflow:auto}
+.campaign-note{color:#aeb5c4;font-size:12px;line-height:1.7}
+#battle-section{max-width:1050px;margin:20px auto;padding:0 14px}
+@media(max-width:760px){.campaign-grid{grid-template-columns:1fr}.campaign-side{grid-template-columns:1fr 1fr}.campaign-side .campaign-panel:first-child{grid-column:1/-1}.world-map{min-height:250px}.campaign-resources{grid-template-columns:repeat(4,1fr)}}
